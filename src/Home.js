@@ -1,16 +1,20 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import HeaderBar from "./HeaderBar";
 
 class Home extends Component {
 	render() {
-		const { isAuthenticated, login } = this.props.auth;
 		return (
-			<div className="body">
-				<h1>Home</h1>
-				{isAuthenticated() ? (
-					<Link to="/profile">View Profile</Link>
+			<div className="Home">
+				{this.props.auth.isAuthenticated() ? (
+					<>
+						<HeaderBar
+							height="50px"
+							color="#6da34d"
+							title="Welcome to Quaroutine"
+						/>
+					</>
 				) : (
-					<button onClick={login}>Log In</button>
+					<></>
 				)}
 			</div>
 		);

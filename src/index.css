@@ -3,15 +3,12 @@ body {
 	padding: 0;
 	font-family: sans-serif;
 }
-
 .body {
 	margin: 15px;
 }
 
-h1,
-h2,
-h3 {
-	color: #f0582a;
+h1 {
+	color: white;
 }
 
 button {
@@ -24,19 +21,42 @@ ul.unstyled {
 	padding: 0;
 }
 
+nav {
+	background-color: white;
+}
+
+.welcome-header {
+	text-align: center;
+}
+
 nav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-image: linear-gradient(to bottom right, #4288e4, #1955af);
+	display: flex;
+	align-items: center;
 }
 
 nav li {
 	float: left;
+	margin-left: 15px;
 }
 
 nav li a {
+	display: block;
+	color: black;
+	text-align: center;
+	font-size: 16px;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	color: darkgrey;
+}
+
+.right-align button {
 	display: block;
 	color: white;
 	text-align: center;
@@ -44,10 +64,7 @@ nav li a {
 	text-decoration: none;
 }
 
-nav li a:hover {
-	background-color: #1651a8;
-}
-
-nav button {
-	margin-top: 13px;
+.right-align {
+	margin-left: auto;
+	overflow: auto;
 }
